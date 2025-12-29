@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>She Raine's Events | Balloon Styling</title>
+  <style>
+    body { margin:0; font-family:Segoe UI,Arial,sans-serif; background:#f7f9fc; color:#1f2937; }
+    header { background:linear-gradient(135deg,#1e90ff,#00bfff); color:#fff; padding:3rem 1.5rem; text-align:center; }
+    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:600; }
+    section { padding:3rem 1.5rem; max-width:1100px; margin:auto; }
+    h2 { color:#1e90ff; margin-bottom:1.2rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; }
+    .card { background:white; border-radius:18px; padding:1.5rem; box-shadow:0 10px 25px rgba(0,0,0,.08); }
+    .price { font-size:1.6rem; font-weight:bold; color:#00bfff; }
+    input, textarea, select { width:100%; padding:.7rem; margin:.5rem 0 1rem; border-radius:8px; border:1px solid #cbd5e1; }
+    button { background:#1e90ff; color:white; border:none; padding:.9rem 1.4rem; border-radius:12px; cursor:pointer; }
+    footer { background:#0f172a; color:white; text-align:center; padding:1.5rem; }
+    .payment-buttons { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin-top:1rem; }
+    .pay-btn { display:block; text-align:center; padding:1rem; border-radius:14px; color:white; font-weight:600; text-decoration:none; }
+    .cashapp { background:#00d632; }
+    .venmo { background:#3d95ce; }
+    .bank { background:#1e90ff; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>She Raine's Events</h1>
+  <p>Luxury balloon styling & event decor ☁️💙</p>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#booking">Book</a>
+  </nav>
+</header>
+
+<section id="services">
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card">Balloon Arches</div>
+    <div class="card">Balloon Garlands</div>
+    <div class="card">Balloon Columns</div>
+    <div class="card">Full Event Styling</div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Pricing (USD)</h2>
+  <div class="grid">
+    <div class="card"><p class="price">$120</p>Mini Garland</div>
+    <div class="card"><p class="price">$220</p>Standard Garland</div>
+    <div class="card"><p class="price">$300+</p>Balloon Arch</div>
+    <div class="card"><p class="price">$650+</p>Full Styling</div>
+  </div>
+</section>
+
+<section id="booking">
+  <h2>Book Your Event</h2>
+  <div class="card">
+    <form>
+      <input placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="date" required />
+      <select>
+        <option>Mini Garland</option>
+        <option>Standard Garland</option>
+        <option>Balloon Arch</option>
+        <option>Full Event Styling</option>
+      </select>
+      <textarea placeholder="Event details"></textarea>
+      <div class="payment-buttons">
+        <a class="pay-btn cashapp" href="https://cash.app/$YourCashAppName" target="_blank">Cash App</a>
+        <a class="pay-btn venmo" href="https://venmo.com/u/YourVenmoName" target="_blank">Venmo</a>
+        <a class="pay-btn bank" href="#">Bank Transfer</a>
+      </div>
+      <button>Submit Booking</button>
+    </form>
+  </div>
+</section>
+
+<footer>© 2025 She Raine's Events</footer>
+</body>
+</html>
